@@ -1,4 +1,4 @@
-            TspTwoOptGreedy(tsp)        Group 38
+            TspTwoOptGreedy(tsp)   
 
 To build the tspTwoOptGreedy program please use the included script.
 From in the directory where the source code and script are run the
