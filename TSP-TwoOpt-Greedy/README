@@ -1,0 +1,32 @@
+            TspTwoOptGreedy(tsp)        Group 38
+
+To build the tspTwoOptGreedy program please use the included script.
+From in the directory where the source code and script are run the
+command...
+
+ "./build.sh"
+
+ If for some reason you get a permission error first run the command...
+
+ "chmod +x build.sh" 
+
+Then run the previous command again. This will compile the program into 
+an executable file named "tsp". From here to run the program make sure 
+the input files are in the directory and run...
+
+ "./tsp [file_name] [time_in_seconds]"
+
+Where [file_name] is the name of the file to run and 
+      [time_in_seconds] is how long the algorithms will run  
+
+Example-> ./tsp test-input-1.txt 180 ->Runs test-input-1.txt for 180 seconds
+
+
+
+********************************ATTENTION***********************************
+Please do not use the watch.py file to interupt tsp's operation. Tsp maintains
+many pointers to memory that need to be cleaned up on exit. Instead just use 
+the included feature of selecting a time length when running. This method will 
+always quit tsp at the chosen time no matter the input size. If for some 
+reason you do need to quit early during operation just raise a sig_int using 
+"Ctrl c", tsp has a signal handler to clean up it's memory in this situation.    
